@@ -17,11 +17,15 @@ def ask_question(question, choices):
     user_answer = input("Enter A, B, or C: ")
     return user_answer
 
-#the secodn function checks whether the users answer is correct or not
+#the second function checks whether the users answer is correct or not
 def check_answer(user_answer, correct_answer):
     if user_answer == correct_answer:
         return True
     else:
         return False
+
+#In the thrid function we call the first and second functions and track the correct answers
+def run_quiz(questions):
+    
 
 
