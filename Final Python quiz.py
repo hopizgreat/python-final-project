@@ -9,4 +9,11 @@ feed_back = ["AI can make mistakes, so information should be verified using reli
 
 #1st function asks the user the questions and asks for an input
 def ask_question(question, choices):
-    
+    print(questions)
+    #the code below is used to go over and print every choices of the questions
+    for choice in choices:
+        print(choice)
+    #asks the user to choose an answer
+    user_answer = input("Enter A, B, or C: ")
+    return user_answer
+
