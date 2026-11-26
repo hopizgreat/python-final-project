@@ -26,6 +26,6 @@ def check_answer(user_answer, correct_answer):
 
 #In the thrid function we call the first and second functions and track the correct answers
 def run_quiz(questions):
-    
+    score = 0
 
 
