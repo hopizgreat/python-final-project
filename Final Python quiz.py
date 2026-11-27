@@ -29,7 +29,18 @@ def run_quiz(questions):
     score = 0
     for question in questions:
         user_answer = ask_question(questions, choices)
-        is_correct = check_answer(user_answer, correct_answers)
+        is_correct = check_answer(user_answer, correct_answers[0])
 
+#now we check if the answer is correct and if it is we track the correct answer
+        if is_correct:
+            score = score + 1
+            print("correct")
+        else:
+            print("inccorect")
+            print(feed_back[0])
+    return score
+
+
+def
 
 
