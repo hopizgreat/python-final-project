@@ -8,7 +8,7 @@ correct_answers = ["B"]
 feed_back = ["AI can make mistakes, so information should be verified using reliable sources."]
 
 #1st function asks the user the questions and asks for an input
-def ask_question(question, choices):
+def ask_question(questions, choices):
     print(questions)
     #the code below is used to go over and print every choices of the questions
     for choice in choices:
@@ -27,5 +27,9 @@ def check_answer(user_answer, correct_answer):
 #In the thrid function we call the first and second functions and track the correct answers
 def run_quiz(questions):
     score = 0
+    for question in questions:
+        user_answer = ask_question(questions, choices)
+        is_correct = check_answer(user_answer, correct_answers)
+
 
 
